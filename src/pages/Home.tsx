@@ -44,7 +44,9 @@ export function Home() {
   }, []);
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome, Ignite</Text>
+      <Text style={styles.title} testID="welcome">
+        Welcome, Ignite
+      </Text>
       <Text style={styles.greetings}>{greeting}</Text>
       <TextInput
         style={styles.input}
